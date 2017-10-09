@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title>Hello MUI</title>
@@ -8,12 +9,14 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 		<link rel="stylesheet" href="css/mui.min.css">
-		<link rel="stylesheet" type="text/css" href="css/mui.indexedlist.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mui.indexedlist.css" />
 		<style>
-			html,body {
+			html,
+			body {
 				background-color: #efeff4;
 			}
-			.title{
+			
+			.title {
 				/*margin:10px 10px 10px;*/
 				/*padding: 10px;*/
 				/*margin: auto 40px;*/
@@ -27,16 +30,20 @@
 				/*background: red;*/
 				font-size: 15px;
 			}
-			.header{
-				background:#1e82d2;
+			
+			.header {
+				background: #1e82d2;
 			}
-			.mui-icon-left-nav{
+			
+			.mui-icon-left-nav {
 				color: #fff;
 			}
-			.mui-pull-right{
+			
+			.mui-pull-right {
 				color: #fff;
 			}
-			.title input{
+			
+			.title input {
 				border: 0;
 				outline: none;
 				margin-bottom: 10px;
@@ -45,50 +52,62 @@
 				color: #fff;
 				text-align: left;
 			}
-			.top-padding{
+			
+			.top-padding {
 				margin-top: 43px;
 			}
-			.chat-ul{
+			
+			.chat-ul {
 				width: 100%;
 				background: #1e82d2!important;
 				z-index: 100;
 			}
-			.chat-ul li{
+			
+			.chat-ul li {
 				border: 1px solid #1e82d2!important;
 				outline: none;
 			}
-			.mui-media-body{
+			
+			.mui-media-body {
 				color: #fff!important;
 			}
-			.chat-ul li a img{
+			
+			.chat-ul li a img {
 				display: inline-block;
 				width: 40px;
 				height: 40px;
 			}
-			.chat-con{
+			
+			.chat-con {
 				background: #fff!important;
 			}
-			.top-reset{
+			
+			.top-reset {
 				margin-top: -14px;
 			}
-			.top-reset li{
+			
+			.top-reset li {
 				border: 1px solid #fff!important;
 			}
-			.top-reset li a img{
+			
+			.top-reset li a img {
 				display: inline-block;
 				width: 40px;
 				height: 40px;
 			}
-			.chat-font{
+			
+			.chat-font {
 				color: #555!important;
 			}
-			.chat-none{
+			
+			.chat-none {
 				width: 100%;
 				min-height: 10px;
-				height: auto;
+				height: 100%;
 				background: #E8E8E8;
 			}
-			.chat-none img{
+			
+			.chat-none img {
 				display: block;
 				width: 100px;
 				height: 100px;
@@ -96,44 +115,58 @@
 				margin: 0px auto;
 				vertical-align: middle;
 			}
-			.chat-none p{
+			
+			.chat-none p {
 				text-align: center;
 				padding: 10px;
 			}
+			
+			.mui-grid-view.mui-grid-9 {
+				border: none;
+			}
+			.mui-search .mui-placeholder{
+				text-align: left;
+				padding-left: 20px;
+				color: #FFFF;
+			}
+			.mui-search .mui-placeholder .mui-icon {
+				color: #FFFFFF;
+			}
+			.mui-active{
+				color: #FFFFFF;
+			}
 		</style>
 	</head>
+
 	<body>
-		<header class="mui-bar mui-bar-nav header">
+		<header class="mui-bar mui-bar-nav header" style="display: flex;align-items: center;">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<a class="mui-icon mui-icon-plusempty mui-pull-right" id="open"></a>
-			<div class="title">
-				<input type="search" name="" class="mui-input-clear mui-indexed-list-search-input" />
+			<div class="mui-input-row mui-search" style="flex-grow: 1;">
+				<input type="search" class="mui-input-clear" placeholder="">
 			</div>
-			<!--<div class="mui-indexed-list-search mui-input-row mui-search">
-				<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="">
-			</div>-->
+			<a class="mui-icon mui-icon-plusempty mui-pull-right"></a>
 		</header>
 		<div class="top-padding">
 			<ul class="mui-table-view mui-grid-view mui-grid-9 chat-ul">
-				<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 					<a href="#">
 						<img src="images/首页/扫一扫图标.png" alt="" />
 						<div class="mui-media-body">扫一扫</div>
 					</a>
 				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 					<a href="#">
 						<img src="images/首页/付钱图标.png" alt="" />
 						<div class="mui-media-body">付钱</div>
 					</a>
 				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 					<a href="#">
 						<img src="images/首页/收钱图标.png" alt="" />
 						<div class="mui-media-body">收钱</div>
 					</a>
 				</li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 					<a href="#">
 						<img src="images/首页/卡包图标.png" alt="" />
 						<div class="mui-media-body">卡包</div>
@@ -142,49 +175,49 @@
 			</ul>
 			<div class="mui-content top-reset">
 				<ul class="mui-table-view mui-grid-view mui-grid-9 chat-con">
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石三宝图标.png" alt="" />
 							<div class="mui-media-body chat-font">砖石三宝</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石王国图标.png" alt="" />
 							<div class="mui-media-body chat-font">砖石王国</div>
 						</a>
 					</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石夺宝图标.png" alt="" />
 							<div class="mui-media-body chat-font">钻石夺宝</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石时时彩图标.png" alt="" />
 							<div class="mui-media-body chat-font">钻石彩</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石期货图标.png" alt="" />
 							<div class="mui-media-body chat-font">钻石期货</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石棋牌图标.png" alt="" />
 							<div class="mui-media-body chat-font">钻石棋牌</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/钻石直播秀图标.png" alt="" />
 							<div class="mui-media-body chat-font">钻石直播秀</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-3">
+					<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
 						<a href="#">
 							<img src="images/首页/更多图标.png" alt="" />
 							<div class="mui-media-body chat-font">更多</div>
@@ -201,7 +234,8 @@
 	<script src="js/mui.min.js"></script>
 	<script>
 		mui.init({
-			swipeBack:true //启用右滑关闭功能
+			swipeBack: true //启用右滑关闭功能
 		});
 	</script>
+
 </html>

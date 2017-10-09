@@ -14,7 +14,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "mains.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -177,114 +177,177 @@
 		}
 	},
 	"dependencies": {
-	  "pages": {
-	    "setting.html": {
-	      "href": "setting.html",
-	      "resources": [
-	        "js/mui.min.js",
-	        "js/mui.view.js",
-	        "libs/easymob-webim-sdk/jquery-1.11.1.js",
-	        "libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
-	        "libs/easymob-webim-sdk/json2.js",
-	        "libs/easymob-webim-sdk/easemob.im-1.0.5.js",
-	        "js/feedback.js",
-	        "js/feedback-page.js",
-	        "js/mui.locker.js",
-	        "js/app.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/feedback-page.css",
-	        "images/iconfont-tianjia.png"
-	      ],
-	      "refer": [
-	        "login.html"
-	      ],
-	      "priority": 1
-	    },
-	    "main.html": {
-	      "href": "main.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "js/mui.min.js",
-	        "js/app.js"
-	      ],
-	      "refer": [
-	        "setting.html"
-	      ],
-	      "priority": 1
-	    },
-	    "unlock.html": {
-	      "href": "unlock.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "js/mui.min.js",
-	        "js/mui.locker.js",
-	        "js/app.js"
-	      ],
-	      "refer": [
-	        "login.html",
-	        "main.html"
-	      ],
-	      "priority": 0
-	    },
-	    "forget_password.html": {
-	      "href": "forget_password.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/style.css",
-	        "js/mui.min.js",
-	        "js/app.js"
-	      ],
-	      "priority": 1
-	    },
-	    "reg.html": {
-	      "href": "reg.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/style.css",
-	        "js/mui.min.js",
-	        "js/app.js"
-	      ],
-	      "refer": [
-	        "login.html"
-	      ],
-	      "priority": 3
-	    },
-	    "login.html": {
-	      "href": "login.html",
-	      "resources": [
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "css/style.css",
-	        "js/mui.min.js",
-	        "js/mui.enterfocus.js",
-	        "js/app.js",
-	        "images/qihoo.png",
-	        "images/qq.png",
-	        "images/sinaweibo.png",
-	        "images/weixin.png"
-	      ],
-	      "refer": [
-	        "unlock.html",
-	        "forget_password.html",
-	        "main.html",
-	        "reg.html"
-	      ],
-	      "priority": 0
-	    }
-	  },
-	  "idle": {
-	    "resources": [
-	      "js/service.js",
-	      "libs/easymob-webim-sdk/quickstart.md",
-	      "images/user-photo.png",
-	      "README.md"
-	    ]
-	  }
+		"pages": {
+			"setting.html": {
+				"href": "setting.html",
+				"resources": [
+					"js/mui.min.js",
+					"js/mui.view.js",
+					"libs/easymob-webim-sdk/jquery-1.11.1.js",
+					"libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+					"libs/easymob-webim-sdk/json2.js",
+					"libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+					"js/feedback.js",
+					"js/feedback-page.js",
+					"js/mui.locker.js",
+					"js/app.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/feedback-page.css",
+					"images/iconfont-tianjia.png"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 1
+			},
+			"main.html": {
+				"href": "main.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"refer": [
+					"setting.html"
+				],
+				"priority": 1
+			},
+			"unlock.html": {
+				"href": "unlock.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"js/mui.locker.js",
+					"js/app.js"
+				],
+				"refer": [
+					"login.html",
+					"main.html"
+				],
+				"priority": 0
+			},
+			"forget_password.html": {
+				"href": "forget_password.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"priority": 1
+			},
+			"reg.html": {
+				"href": "reg.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/app.js"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 3
+			},
+			"login.html": {
+				"href": "login.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"js/mui.enterfocus.js",
+					"js/app.js",
+					"images/qihoo.png",
+					"images/qq.png",
+					"images/sinaweibo.png",
+					"images/weixin.png"
+				],
+				"refer": [
+					"unlock.html",
+					"forget_password.html",
+					"main.html",
+					"reg.html"
+				],
+				"priority": 0
+			},
+			"tab-webview-subpage-about.html": {
+				"resources": [
+					"images/首页/更多图标.png",
+					"images/首页/钻石王国图标.png",
+					"images/首页/钻石棋牌图标.png",
+					"css/mui.indexedlist.css",
+					"images/首页/收钱图标.png",
+					"images/首页/钻石时时彩图标.png",
+					"images/首页/扫一扫图标.png",
+					"images/首页/钻石夺宝图标.png",
+					"images/首页/首页服务信息图标.png",
+					"images/首页/付钱图标.png",
+					"images/首页/钻石期货图标.png",
+					"images/首页/钻石直播秀图标.png",
+					"images/首页/卡包图标.png",
+					"images/首页/钻石三宝图标.png",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"tab-webview-subpage-setting.html": {
+				"resources": [
+					"css/feedback.css",
+					"js/feedback.js",
+					"images/user-photo.png",
+					"js/mui.view.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mains.html": {
+				"resources": [
+					"tab-webview-subpage-about.html",
+					"js/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"tab-webview-subpage-setting.html",
+					"tab-webview-subpage-chat.html",
+					"tab-webview-subpage-contact.html"
+				],
+				"priority": 0
+			},
+			"tab-webview-subpage-chat.html": {
+				"resources": [
+					"images/qq.png",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"tab-webview-subpage-contact.html": {
+				"resources": [
+					"images/user-photo.png",
+					"js/mui.indexedlist.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/service.js",
+				"libs/easymob-webim-sdk/quickstart.md",
+				"README.md"
+			]
+		}
 	},
 	"unpackage":[
 	  "README.md"

@@ -53,12 +53,21 @@
 				-webkit-box-shadow: none;
 				box-shadow: none;
 			}
+			.mui-bar{
+				background: #1e82d2;
+				color:#FFFFFF;
+			}
+			.mui-title {
+				color:#FFFFFF;
+			}
 		</style>
 	</head>
 
 	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 id="title" class="mui-title">好友</h1>
+		</header>
 		<div class="mui-content">
-		<div class="mui-bar"></div>
 			<div id='list' class="mui-indexed-list">
 				<div class="mui-indexed-list-search mui-input-row mui-search">
 					<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
@@ -560,5 +569,8 @@
 				//create
 				window.indexedList = new mui.IndexedList(list);
 			});
+			mui.plusReady(function(){
+				plus.navigator.setStatusBarBackground('#1e82d2')
+			})
 		</script>
 </html>
