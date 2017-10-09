@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mui.indexedlist.css"/>
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin:10px 10px 10px;
+				color: #6d6d72;
+				width:100%;
+				height: 55px;
+				line-height: 55px;
+				text-align: center;
+				background: red;
+				font-size: 15px;
+			}
+			.header{
+				background:#1e82d2;
+			}
+			.mui-icon-left-nav{
+				color: #fff;
+			}
+			.mui-pull-right{
+				color: #fff;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav header mui-indexed-list">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-icon mui-icon-plusempty mui-pull-right" id="open"></a>
+			<div class="mui-indexed-list-search mui-input-row mui-search">
+				<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="ww">
+			</div>
+		</header>
+		<!--<div class="mui-content">
+			<div class="title">
+			</div>
+		</div>-->
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</html>
