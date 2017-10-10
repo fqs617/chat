@@ -1,1 +1,58 @@
-null
+{
+	"tab-webview-subpage-about.html": {
+		"resources": [
+			"images/首页/更多图标.png",
+			"images/首页/钻石王国图标.png",
+			"images/首页/钻石棋牌图标.png",
+			"css/mui.indexedlist.css",
+			"images/首页/收钱图标.png",
+			"images/首页/钻石时时彩图标.png",
+			"images/首页/扫一扫图标.png",
+			"images/首页/钻石夺宝图标.png",
+			"images/首页/首页服务信息图标.png",
+			"images/首页/付钱图标.png",
+			"images/首页/钻石期货图标.png",
+			"images/首页/钻石直播秀图标.png",
+			"images/首页/卡包图标.png",
+			"images/首页/钻石三宝图标.png",
+			"css/mui.min.css"
+		]
+	},
+	"tab-webview-subpage-setting.html": {
+		"resources": [
+			"css/feedback.css",
+			"js/feedback.js",
+			"images/user-photo.png",
+			"js/mui.view.js",
+			"css/mui.min.css"
+		]
+	},
+	"mains.html": {
+		"resources": [
+			"tab-webview-subpage-about.html",
+			"js/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"tab-webview-subpage-about.html",
+			"tab-webview-subpage-setting.html",
+			"tab-webview-subpage-chat.html",
+			"tab-webview-subpage-contact.html"
+		]
+	},
+	"tab-webview-subpage-chat.html": {
+		"resources": [
+			"images/qq.png",
+			"css/mui.min.css"
+		]
+	},
+	"tab-webview-subpage-contact.html": {
+		"resources": [
+			"images/user-photo.png",
+			"js/mui.indexedlist.js",
+			"css/mui.min.css"
+		]
+	}
+}
